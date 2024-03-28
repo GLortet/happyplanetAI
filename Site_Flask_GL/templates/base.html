@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mon Site Web IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block additional_styles %}{% endblock %}
+</head>
+<body>
+	<div class="default-background">
+    		<header>
+        		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            		<a class="navbar-brand" href="/">Mon Site IA</a>
+            		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                		<span class="navbar-toggler-icon"></span>
+            		</button>
+            		<div class="collapse navbar-collapse" id="navbarNav">
+                		<ul class="navbar-nav">
+                    		<li class="nav-item active">
+                        		<a class="nav-link" href="{{ url_for('home') }}">Accueil</a>
+                    		</li>
+                    		<li class="nav-item">
+                        		<a class="nav-link" href="{{ url_for('about') }}">À propos</a>
+                    		</li>
+                    		<li class="nav-item">
+                        		<a class="nav-link" href="{{ url_for('projects') }}">Projets</a>
+                    		</li>
+                    		<li class="nav-item">
+                        		<a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                    		</li>
+		    		<li class="nav-item">
+                        		<a class="nav-link" href="{{ url_for('agriculture') }}">Agriculture</a>
+                    		</li>
+				<li class="nav-item">
+                        		<a class="nav-link" href="{{ url_for('eduadapt') }}">Education</a>
+                    		</li>
+                		</ul>
+            		</div>
+        		</nav>
+    </header>
+
+    <main role="main" class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">© 2024 Mon Site IA. Tous droits réservés.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

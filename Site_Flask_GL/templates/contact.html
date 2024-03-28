@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+<div class="home-content">
+    <div class="jumbotron jumbotron-fluid bg-transparent text-center">
+        <h1 class="display-4">Gilles Lortet vous accueille dans l'univers de l'IA – Explorer, Apprendre, Innover.</h1>
+        <p class="lead">Découvrez comment l'Intelligence Artificielle pourrait transformer notre monde.</p>
+        <hr class="my-4">
+        <p>Explorer des projets innovants, apprendre des concepts clés, et rester à la pointe de la technologie.</p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('projects') }}" role="button">Voir les Projets</a>
+    </div>
+
+    <div class="container">
+        <!-- Section À propos rapide -->
+        <div class="row my-5">
+            <div class="col-md-6">
+                <h2>À propos de Moi</h2>
+                <p>Ingénieur passionné par l'innovation technologique et l'application de l'IA, je m'efforce de développer des initiatives servant notre société.</p>
+                <a href="{{ url_for('about') }}" class="btn btn-outline-secondary">En savoir plus</a>
+            </div>
+            <div class="col-md-6">
+                <!-- Optionnel : Vous pouvez insérer une image ou une vidéo de présentation ici -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

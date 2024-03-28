@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block additional_styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/eduadapt-parents.css') }}">
+{% endblock %}
+
+{% block title %}EduAdapt pour les parents{% endblock %}
+
+{% block content %}
+
+<div class="container eduadapt-content eduadapt-background">
+    <header class="text-center mb-4">
+            <h1>Partenariat et Soutien dans l'Éducation des Enfants</h1>
+                <p class="header-description">EduAdapt offre aux parents un moyen simple et intuitif de s'impliquer dans l'éducation de leurs enfants. Grâce à une interface conviviale, les parents peuvent facilement suivre les progrès de leurs enfants, comprendre leurs forces et les domaines à améliorer, et obtenir des conseils pratiques pour les soutenir à la maison.</p>
+            </header>
+    </section>
+
+   <section id="features">
+  		<article id="pour-les-parents" class="eduadapt-section">
+    		<div class="section-inner">
+                <h3 class="section-title icon-eduadapt"><span class="title-text">Suivi Facile des Progrès</span></h3>
+		<div class="section-content">
+            	<div class="content-text">
+                <p>Avec EduAdapt, les parents ont accès à des rapports clairs et compréhensibles qui détaillent les réalisations et les défis de leurs enfants. Même sans compétences technologiques avancées, ils peuvent se sentir informés et impliqués.</p>
+		</div>
+		<div class="content-image">
+                		<!-- Mettez à jour le chemin d'accès à l'image selon votre structure de dossier -->
+                		<img src="static/img/eduadapt-parents-apprentissage.webp" alt="Image apprentissage adapté pour les parents">
+            	</div>
+		</div>
+	</div>
+            </article>
+
+            <!-- Ressources à la Maison -->
+	
+            <article id="pour-les-parents" class="eduadapt-section">
+    		<div class="section-inner">
+                <h3 class="section-title icon-eduadapt"><span class="title-text">Ressources à la Maison</span></h3>
+		<div class="section-content">
+            	<div class="content-text">
+                <p>EduAdapt fournit des ressources et des activités que les parents peuvent utiliser pour enrichir l'apprentissage à la maison. Que ce soit par le biais de documents imprimés ou d'activités pratiques, les parents disposent d'outils pour contribuer activement au développement de leurs enfants.</p>
+		</div>
+		<div class="content-image">
+                		<!-- Mettez à jour le chemin d'accès à l'image selon votre structure de dossier -->
+                		<img src="static/img/eduadapt-parents-gain.webp" alt="Gain pour les parents">
+		</div>
+		</div>
+	</div>
+</article>
+            <!-- Communication avec les Enseignantse -->
+
+            <article id="pour-les-parents" class="eduadapt-section">
+    		<div class="section-inner">
+                <h3 class="section-title icon-eduadapt"><span class="title-text">Communication avec les Enseignants</span></h3>
+		<div class="section-content">
+            	<div class="content-text">
+                <p>La plateforme facilite la communication avec les enseignants, permettant
+un dialogue ouvert et continu sur le bien-être et l'éducation des enfants, renforçant le partenariat école-maison.</p>
+		</div>
+		<div class="content-image">
+                		<!-- Mettez à jour le chemin d'accès à l'image selon votre structure de dossier -->
+                		<img src="static/img/eduadapt-parents-competence-vie.webp" alt="Compétences de vie pour les parents">
+		</div>
+		</div>
+	</div>
+ </article>
+
+	    <!-- Accès à des Conseils d'Experts -->
+
+	    <article id="pour-les-parents" class="eduadapt-section">
+    		<div class="section-inner">
+                <h3 class="section-title icon-eduadapt"><span class="title-text">Accès à des Conseils d'Experts</span></h3>
+		<div class="section-content">
+            	<div class="content-text">
+		<p>EduAdapt offre également aux parents l'accès à des conseils d'experts en éducation pour les aider à naviguer dans les défis éducatifs et à soutenir leurs enfants dans les meilleures conditions.</p>
+		</div>
+		<div class="content-image">
+                		<!-- Mettez à jour le chemin d'accès à l'image selon votre structure de dossier -->
+                		<img src="static/img/eduadapt-parents-suivi.webp" alt="Suivi et feedback pour les parents">
+		</div>
+		</div>
+	</div>
+	    </article>
+
+	<!-- Engagement Sans Pression Technologique -->
+	    <article id="pour-les-parents" class="eduadapt-section">
+    		<div class="section-inner">
+                <h3 class="section-title icon-eduadapt"><span class="title-text">Engagement Sans Pression Technologique</span></h3>
+		<div class="section-content">
+            	<div class="content-text">
+		<p>Conscient que tous les parents ne sont pas à l'aise avec la technologie, EduAdapt est conçu pour être accessible et facile à utiliser pour tous, garantissant que chaque parent, indépendamment de son habileté technologique, peut bénéficier des avantages de la plateforme.</p>
+		</div>
+		<div class="content-image">
+                		<!-- Mettez à jour le chemin d'accès à l'image selon votre structure de dossier -->
+                		<img src="static/img/eduadapt-parents-avenir.webp" alt="Suivi et feedback pour les parents">
+    		<!-- Ici, vous pouvez ajouter un bouton d'appel à l'action si nécessaire -->
+    		<a href="#join-eduadapt" class="btn btn-primary">Rejoindre EduAdapt</a>
+ </article>
+		</div>
+		</div>
+		</div>
+	</div>
+
+        </div>
+    </section>
+
+</div>
+</main>
+{% endblock %}

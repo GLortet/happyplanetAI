@@ -1,0 +1,216 @@
+/* Styles généraux */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styles spécifiques à la page agriculture */
+/* Background spécifique à la page agriculture */
+.agriculture-background {
+    background: url('../img/backgroundagriculture.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.agriculture-content {
+    max-width: 1200px; /* Largeur max pour le contenu */
+    margin: auto; /* Centrer le contenu */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond légèrement transparent */
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ombre subtile */
+    color: #333; /* Couleur de texte générale */
+}
+
+.agriculture-content header {
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent noir pour le contraste */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px; /* Espacement entre le header et le reste du contenu */
+}
+
+.agriculture-content header h1,
+.agriculture-content header p {
+    color: #fff; /* Texte en blanc pour le contraste */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour une meilleure lisibilité */
+}
+
+.agriculture-content header p {
+    padding: 0 20px; /* Padding horizontal pour le paragraphe */
+}
+
+
+.agriculture-content p {
+    font-size: 1rem;
+    line-height: 1.6; /* Espacement des lignes pour la lisibilité */
+    text-shadow: none;
+}
+
+.agriculture-content ul {
+    list-style: inside square; /* Style de puce */
+}
+
+.agriculture-content li {
+    margin-bottom: 10px;
+}
+
+.agriculture-content .btn-outline-secondary {
+    color: #007bff;
+    background-color: transparent;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.agriculture-content .btn-outline-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f5f5f5;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.footer .text-muted {
+    text-align: center;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Utilisation de couleurs et amélioration typographique */
+.agriculture-content h1, .agriculture-content h2, .agriculture-content h3 {
+    color: #2c3e50; /* Bleu foncé pour les titres */
+    margin-bottom: 15px;
+}
+
+.agriculture-content h2 {
+    font-size: 1.8rem;
+}
+
+.agriculture-content h3 {
+    font-size: 1.5rem;
+}
+
+.icon-agriculture {
+  background-image: url('../img/icons/icon_agriculture.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle; /* Alignement vertical avec le texte */
+  margin-right: 10px; /* Espace entre l
+
+
+/* Styles des boîtes pour chaque section */
+.agriculture-section {
+    background-color: white;
+    border: 1px solid #eaecef;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles spécifiques pour l'objectif global */
+#objective {
+    background: rgba(255, 255, 255, 0.8); /* Fond semi-transparent blanc pour plus de contraste */
+    padding: 10px;
+    border-radius: 5px; /* Bords arrondis pour le style */
+    margin-top: -20px; /* Négatif margin pour chevaucher avec le titre */
+    margin-bottom: 30px; /* Espace avant la prochaine section */
+}
+
+#objective h2 {
+    color: #28a745; /* Une couleur verte pour le thème de l'agriculture durable */
+    margin-bottom: 10px;
+}
+
+#objective p {
+    font-size: 1.2rem; /* Taille de police plus grande */
+    color: #2c3e50; /* Couleur de police foncée pour le contraste */
+    text-shadow: none; /* Enlever l'ombre du texte */
+}
+
+/* Styles pour le titre de chaque section avec icône */
+.section-title.icon-agriculture {
+    background-image: url('../img/icons/icon_agriculture.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px; /* Taille de l'icône */
+    height: 50px; /* Taille de l'icône */
+    vertical-align: middle;
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+    padding-left: 60px; /* Espace pour le texte à côté de l'icône */
+}
+
+/* Styles pour le contenu de chaque section */
+.section-content {
+    background: #fff; /* Fond blanc pour le contenu de la section */
+    padding: 15px; /* Espacement interne */
+    border-radius: 5px; /* Bords arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour la profondeur */
+    margin-top: 20px; /* Espace au-dessus du contenu */
+}
+
+/* Styles pour les sous-titres spécifiques comme Quoi ?, Qui ?, etc. */
+.agriculture-section strong {
+    display: block;
+    background-color: #eaf1f1; /* Couleur de fond légère */
+    color: #2c3e50; /* Couleur de texte foncée pour le contraste */
+    font-weight: bold;
+    padding: 5px 10px; /* Espacement intérieur pour la lisibilité */
+    margin: 10px 0; /* Espacement extérieur pour séparer des autres éléments */
+    border-left: 4px solid #3498db; /* Bordure à gauche pour mettre en évidence */
+}
+
+/* Amélioration des listes pour plus de clarté */
+.agriculture-section ul {
+    padding-left: 30px; /* Plus d'espace à gauche des puces */
+}
+
+.agriculture-section ul li:before {
+    content: '•';
+    color: #27ae60; /* Couleur verte correspondant au thème de l'agriculture durable */
+    font-weight: bold;
+    font-size: 1.2em; /* Plus grande taille pour les puces */
+    line-height: 1.5em; /* Alignement avec la ligne de texte */
+    margin-left: -1.5em; /* Alignement négatif pour les puces */
+    padding-right: 5px; /* Espacement après la puce */
+}
+
+
+/* Styles des boutons pour l'interaction */
+.agriculture-content .btn {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.agriculture-content .btn:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Amélioration du pied de page */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+}
+

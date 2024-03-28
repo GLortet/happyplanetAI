@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+
+{% block additional_styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/eduadapt.css') }}">
+{% endblock %}
+
+{% block title %}EduAdapt{% endblock %}
+
+{% block content %}
+
+<div class="container eduadapt-content eduadapt-background">
+    <header class="text-center mb-4">
+        <h1>Transformez l'Apprentissage avec EduAdapt</h1>
+        <p class="header-description">Découvrez EduAdapt, où chaque parcours éducatif devient unique. Grâce à notre approche innovante qui combine technologie et pédagogie personnalisée, nous créons des expériences d'apprentissage qui répondent aux besoins individuels de chaque enfant. Rejoignez-nous dans notre mission pour faire de l'éducation une aventure personnalisée et inclusive. #InnovationEducative #ApprentissagePersonnalisé #FuturDeLEducation</p>
+    </header>
+    
+	<main>
+        <section id="objective" class="mb-4 objective-section">
+            <h2>Notre Mission</h2>
+            <p>Révolutionner l'éducation en offrant une expérience d'apprentissage personnalisée qui s'adapte à chaque élève, en exploitant le pouvoir de l'intelligence artificielle pour répondre aux besoins éducatifs uniques de tous les enfants, partout dans le monde, d'ici 5 ans.</p>
+        </section>
+       <section id="features">
+  		<article id="pour-les-enfants" class="eduadapt-section">
+    		<div class="section-inner">
+        		<h3 class="section-title icon-eduadapt"><span class="title-text">Pour les Enfants</span></h3>
+        		<div class="section-content">
+            		<div class="content-text">
+                		<p>EduAdapt offre un parcours d'apprentissage sur mesure, adapté aux besoins et au rythme de chaque élève. En utilisant l'IA, EduAdapt identifie les forces et les domaines à améliorer, proposant des activités éducatives qui favorisent non seulement les compétences académiques mais aussi le développement de compétences pratiques essentielles pour la vie quotidienne.</p>
+                		<!-- Lien vers une page ou une section plus détaillée si nécessaire -->
+                		<a href="{{ url_for('eduadapt_enfants') }}" class="btn btn-primary">En savoir plus</a>
+            		</div>
+            		<div class="content-image">
+                		<!-- Mettez à jour le chemin d'accès à l'image selon votre structure de dossier -->
+                		<img src="static/img/image-pour-les-enfants.webp" alt="Image éducative pour les enfants">
+            		</div>
+        		</div>
+    		</div>
+		</article>
+
+<article id="pour-les-enseignants" class="eduadapt-section">
+    		<div class="section-inner">
+        		<h3 class="section-title icon-eduadapt"><span class="title-text">Pour les Enseignants</span></h3>
+        		<div class="section-content">
+            		<div class="content-text">
+                		<p>La plateforme EduAdapt agit comme un assistant pédagogique, fournissant aux enseignants des données précieuses sur les progrès de chaque élève. Cela leur permet de personnaliser davantage leur enseignement et de proposer des exercices spécifiques qui répondent aux besoins individuels, tout en gagnant du temps pour se concentrer sur l'interaction et le soutien direct aux élèves.</p>
+                		<!-- Lien vers une page ou une section plus détaillée si nécessaire -->
+                		<a href="{{ url_for('eduadapt_enseignants') }}" class="btn btn-primary">En savoir plus</a>
+            		</div>
+            		<div class="content-image">
+                		<!-- Mettez à jour le chemin d'accès à l'image selon votre structure de dossier -->
+                		<img src="static/img/image-pour-les-enseignants.webp" alt="Image EduAdapt pour les enseignants">
+            		</div>
+        		</div>
+    		</div>
+		</article>
+<article id="pour-les-parents" class="eduadapt-section">
+    		<div class="section-inner">
+        		<h3 class="section-title icon-eduadapt"><span class="title-text">Pour les Parents</span></h3>
+        		<div class="section-content">
+            		<div class="content-text">
+                		<p>EduAdapt implique activement les parents dans le parcours éducatif de leurs enfants, offrant des informations claires sur les progrès et les domaines d'amélioration. Les parents reçoivent des suggestions pour soutenir l'apprentissage à la maison et sont encouragés à participer activement à l'éducation de leurs enfants.</p>
+                		<!-- Lien vers une page ou une section plus détaillée si nécessaire -->
+                		<a href="{{ url_for('eduadapt_parents') }}" class="btn btn-primary">En savoir plus</a>
+            		</div>
+            		<div class="content-image">
+                		<!-- Mettez à jour le chemin d'accès à l'image selon votre structure de dossier -->
+                		<img src="static/img/image-pour-les-parents.webp" alt="Image EduAdapt pour les parents">
+            		</div>
+        		</div>
+    		</div>
+		</article>
+	   <article id="comparison" class="eduadapt-section">
+    		<header>
+        		<h2 class="section-title">EduAdapt vs. Le Marché</h2>
+        			<p class="section-subtitle">Comparaison des Solutions d'Apprentissage IA</p>
+    		</header>
+    		<div class="comparison-table">
+       			<table>
+    				<thead>
+        				<tr>
+            				<th>Fonctionnalités</th>
+            				<th>EduAdapt</th>
+            				<th>Autres solutions d'apprentissage</th>
+        				</tr>
+    				</thead>
+    				<tbody>
+        				<tr>
+            				<td>Personnalisation</td>
+            				<td>S'ajuste en temps réel aux besoins et à l'évolution de chaque élève grâce à une IA avancée.</td>
+            				<td>Les autres plateformes offrent également une personnalisation, mais peuvent ne pas offrir une adaptation en temps réel aussi poussée.</td>
+        				</tr>
+        				<tr>
+            				<td>Approche hybride</td>
+            				<td>Propose un équilibre entre les activités numériques et les interactions physiques, avec des options pour des ressources imprimées et des activités manuelles.</td>
+            				<td>Certaines solutions, telles que Bard, offrent des expériences d'apprentissage pratiques, mais peuvent ne pas mettre l'accent sur les ressources imprimées.</td>
+        				</tr>
+        				<tr>
+            				<td>Facilité d'utilisation</td>
+            				<td>Est conçu pour être intuitif et facile à utiliser pour tous, y compris ceux qui ne sont pas technophiles.</td>
+            				<td>Les plateformes telles que IBM Watson Education et Duolingo sont également conçues pour être accessibles, mais l'expérience utilisateur peut varier.</td>
+        				</tr>
+        				<tr>
+            				<td>Support aux compétences de vie</td>
+            				<td>Se concentre sur l'enseignement de compétences pratiques essentielles pour la vie quotidienne.</td>
+            				<td>D'autres solutions, comme Duolingo et Quizlet, se concentrent sur des domaines d'apprentissage spécifiques comme les langues ou les mathématiques.</td>
+        				</tr>
+        				<tr>
+            				<td>Outils de communication</td>
+            				<td>Facilite la communication et le partenariat entre les écoles et les familles grâce à des rapports détaillés et des recommandations.</td>
+            				<td>Les autres solutions peuvent ne pas offrir la même profondeur de communication entre les enseignants et les parents.</td>
+        				</tr>
+    				</tbody>
+				</table>
+    		</div>
+	</article>
+	<article id="project-steps" class="eduadapt-section">
+    		<h2 class="section-title">Étapes du Projet EduAdapt</h2>
+    		<ol class="project-steps-list">
+            		<li>
+            		<strong>Recherche et Développement :</strong> 
+            		Étude approfondie des besoins des élèves, des enseignants et des parents pour informer la conception de l'IA et l'interface utilisateur d'EduAdapt.
+        		</li>
+        		<li>
+            		<strong>Prototypage :</strong> 
+            		Développement d'un prototype fonctionnel d'EduAdapt pour tester les fonctionnalités clés, l'expérience utilisateur et l'efficacité pédagogique de l'IA.
+        		</li>
+        		<li>
+            		<strong>Tests Utilisateurs et Feedback :</strong> 
+            		Mise en place de sessions de tests avec des groupes d'utilisateurs cibles pour collecter des retours et ajuster la solution en conséquence.
+        		</li>
+        		<li>
+            		<strong>Développement Itératif (AGILE) :</strong> 
+            		Amélioration continue du produit basée sur les feedbacks, avec des mises à jour régulières et l'intégration de nouvelles fonctionnalités.
+        		</li>
+        		<li>
+            		<strong>Partenariats et Collaboration :</strong> 
+            		Établissement de partenariats avec des institutions éducatives, des experts pédagogiques et des associations de parents pour soutenir le déploiement d'EduAdapt.
+        		</li>
+        		<li>
+            		<strong>Pilotes Éducatifs :</strong> 
+            		Lancement de programmes pilotes dans des établissements volontaires pour évaluer l'impact d'EduAdapt dans un environnement réel et affiner le modèle de déploiement.
+        		</li>
+        		<li>
+            		<strong>Lancement Officiel :</strong> 
+            		Déploiement d'EduAdapt à plus grande échelle, avec un soutien complet et des ressources pour les utilisateurs.
+        		</li>
+        		<li>
+            		<strong>Suivi et Évolution :</strong> 
+            		Suivi continu des performances et de l'adoption d'EduAdapt, avec des ajustements et des innovations pour rester à la pointe de la pédagogie.
+        		</li>
+    		</ol>
+            </article>
+		<article id="conclusion" class="eduadapt-section">
+    		<h2 class="section-title">En conclusion : Ensemble, Façonnons l'Avenir de l'Éducation avec EduAdapt</h2>
+    		<div class="conclusion-content">
+        			<p><strong>Pourquoi EduAdapt doit devenir une réalité ?</strong>Au-delà d'une simple vision, transformons une idée en une solution concrète qui redéfinit l'éducation pour les générations à venir.</p>
+        		<ul class="conclusion-points">
+            		<li>
+                		<strong>Un Futur d'Excellence Éducative :</strong>EduAdapt incarne la fusion entre l'innovation technologique et la pédagogie, offrant une solution d'apprentissage qui évolue avec le temps.
+           		</li>
+            		<li>
+                		<strong>Made in France, Embrassant le Monde :</strong>Portant les valeurs de notre système éducatif, EduAdapt est prêt à enrichir les expériences d'apprentissage à l'échelle internationale.
+            		</li>
+            		<li>
+                		<strong>Prochaines Étapes :</strong>Notre engagement envers l'amélioration continue promet un déploiement réfléchi et un impact mesurable pour tous les utilisateurs d'EduAdapt.
+            		</li>
+        		</ul>
+        		<p>Rejoignez la communauté EduAdapt et participez à la création d'un parcours éducatif qui prépare les jeunes esprits à réussir dans un monde connecté et diversifié.</p>
+    		</div>
+    		<!-- Ici, vous pouvez ajouter un bouton d'appel à l'action si nécessaire -->
+    		<a href="#join-eduadapt" class="btn btn-primary">Rejoindre EduAdapt</a>
+		</article>
+
+		        </section>
+    </main>
+</div>
+
+{% endblock %}
